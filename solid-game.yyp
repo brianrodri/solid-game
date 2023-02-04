@@ -34,6 +34,7 @@
     "IDEVersion": "2023.1.0.58",
   },
   "resources": [
+    {"id":{"name":"Exceptions","path":"scripts/Exceptions/Exceptions.yy",},"order":0,},
     {"id":{"name":"ArrayExtensions","path":"scripts/ArrayExtensions/ArrayExtensions.yy",},"order":0,},
     {"id":{"name":"HOFUnary","path":"scripts/HOFUnary/HOFUnary.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},

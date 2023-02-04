@@ -17,7 +17,5 @@
     {"name":"Higher-order Functions","order":1,"path":"folders/Scripts/Higher-order Functions.yy",},
     {"name":"GML Extensions","order":2,"path":"folders/Scripts/GML Extensions.yy",},
   ],
-  "ResourceOrderSettings": [
-    {"name":"Exceptions","order":1,"path":"scripts/Exceptions/Exceptions.yy",},
-  ],
+  "ResourceOrderSettings": [],
 }

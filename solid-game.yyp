@@ -26,6 +26,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Extensions.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Higher-order Functions","folderPath":"folders/Scripts/Higher-order Functions.yy","order":0,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GML Extensions","folderPath":"folders/Scripts/GML Extensions.yy","order":0,},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -33,6 +34,7 @@
     "IDEVersion": "2023.1.0.58",
   },
   "resources": [
+    {"id":{"name":"ArrayExtensions","path":"scripts/ArrayExtensions/ArrayExtensions.yy",},"order":0,},
     {"id":{"name":"HOFUnary","path":"scripts/HOFUnary/HOFUnary.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],

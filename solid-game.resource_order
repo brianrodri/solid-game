@@ -14,6 +14,7 @@
     {"name":"Animation Curves","order":12,"path":"folders/Animation Curves.yy",},
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
+    {"name":"Higher-order Functions","order":1,"path":"folders/Scripts/Higher-order Functions.yy",},
   ],
   "ResourceOrderSettings": [],
 }

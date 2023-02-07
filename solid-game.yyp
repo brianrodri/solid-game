@@ -39,6 +39,7 @@
     {"id":{"name":"ArrayExtensions","path":"scripts/ArrayExtensions/ArrayExtensions.yy",},"order":0,},
     {"id":{"name":"CoreAssertions","path":"scripts/CoreAssertions/CoreAssertions.yy",},"order":0,},
     {"id":{"name":"PrimitiveAssertions","path":"scripts/PrimitiveAssertions/PrimitiveAssertions.yy",},"order":0,},
+    {"id":{"name":"ArrayStruct","path":"scripts/ArrayStruct/ArrayStruct.yy",},"order":0,},
     {"id":{"name":"HOFUnary","path":"scripts/HOFUnary/HOFUnary.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],

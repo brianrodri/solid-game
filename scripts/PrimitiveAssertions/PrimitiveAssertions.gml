@@ -73,7 +73,7 @@ function assert_instanceof(_struct, _constructor, _struct_name = "struct", _cons
 /// @param {Real} _length - The length of the array being indexed into.
 /// @param {String} [_index_name] - The name of the index. Defaults to "index".
 /// @param {String} [_length_name] - The name of the length. Defaults to "length".
-/// @returns {Real} The value that has been tested.
+/// @returns {Real} The index that has been tested.
 function assert_index(_index, _length, _index_name = "index", _length_name = "length") {
     return assert_comparison(_index >= 0 && _index < _length, _index, _length, "must be valid for an array with length", _index_name, _length_name, true);
 }

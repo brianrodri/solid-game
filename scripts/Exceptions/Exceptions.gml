@@ -1,4 +1,4 @@
-/// @description Base-class for all exceptions.
+/// @description Base-struct for all exceptions.
 /// @param {String} [_message] - The exception message.
 /// @param {Array<String>} [_stacktrace] - The exception stacktrace. Creates a new one if not provided.
 function Exception(_message = "", _stacktrace = undefined) constructor {

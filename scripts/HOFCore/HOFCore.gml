@@ -82,7 +82,7 @@ function Compose2(_f, _g) constructor {
             case 1:
                 return f(g(argument[0]));
             default:
-                ASSIGN_TO_ARGUMENT_ARRAY;
+                NEW_ARGUMENT_ARRAY;
                 return f(script_execute_ext(g, __argument_array));
         }
     };
@@ -95,9 +95,9 @@ function Partial(_func, _part) constructor {
     func = _func;
     part = _part;
     invoke = array_length(_part) == 0 ? _func : function() {
-        ASSIGN_TO_ARGUMENT_ARRAY;
+        NEW_ARGUMENT_ARRAY;
         return script_execute_ext(func, array_concat(part, __argument_array));
-    }
+    };
 }
 
 #endregion

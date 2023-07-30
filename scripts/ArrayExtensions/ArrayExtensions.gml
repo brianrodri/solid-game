@@ -13,7 +13,7 @@ function array_clone(_array, _start = 0, _sentinal = array_length(_array)) {
 }
 
 /// @description Creates a new variable `__argument_array` with items copied from the global argument array.
-#macro ASSIGN_TO_ARGUMENT_ARRAY                      \
+#macro NEW_ARGUMENT_ARRAY                            \
 var __argument_array = array_create(argument_count); \
 for (var __i = 0; __i < argument_count; ++__i) {     \
     __argument_array[__i] = argument[__i];           \

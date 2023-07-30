@@ -1,5 +1,6 @@
 /// @description Returns the composition of all input functions.
 /// @param {Function} [..._funcs] - The functions to compose. Requires at least one.
+/// @returns {Function}
 function compose() {
     assert_gt(argument_count, 0);
     var _composition = argument[0];
@@ -12,6 +13,7 @@ function compose() {
 /// @description Calls a constructor with an array of arguments and returns the new instance.
 /// @param {Function} _ctor - The constructor to call.
 /// @param {Array} _args - The array of arguments.
+/// @returns {Struct}
 function construct_with_args(_ctor, _args) {
     var _array_length = array_length(_args);
     assert_le(_array_length, 16);
@@ -56,6 +58,7 @@ function construct_with_args(_ctor, _args) {
 /// @description Creates a function that invokes `_f` with `_args` prepended to the arguments it receives.
 /// @param {Function} _func - The function to call.
 /// @param {Any} [..._args] - The arguments to prepend.
+/// @returns {Function}
 function partial(_func) {
     var _args = array_create(argument_count - 1);
     for (var _i = 1; _i < argument_count; ++_i) {

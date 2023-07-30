@@ -14,15 +14,15 @@ function assert_eq(_value, _wanted, _value_name = "value", _wanted_name = "wante
 /// @param {String} [_index_name] - The name of the index. Defaults to "index".
 /// @param {String} [_length_name] - The name of the expected value. Defaults to "length".
 /// @returns {Real} The value that has been tested.
-function assert_index(_index, _length) {
-    return assert_comparison(_index >= 0 && _index < _length, _index, _length, "must be valid for an array with length", "index", "length", true);
+function assert_index(_index, _length, _index_name = "index", _length_name = "length") {
+    return assert_comparison(_index >= 0 && _index < _length, _index, _length, "must be valid for an array with length", _index_name, _length_name, true);
 }
 
 /// @description Asserts that `_value != _unwanted`.
 /// @param {Real} _value - The value to test.
 /// @param {Real} _unwanted - The unwanted value.
 /// @param {String} [_value_name] - The name of the value. Defaults to "value".
-/// @param {String} [_unwanted_name] - The name of the unexpected value. Defaults to "unwanted".
+/// @param {String} [_unwanted_name] - The name of the unwanted value. Defaults to "unwanted".
 /// @returns {Real} The value that has been tested.
 function assert_ne(_value, _unwanted, _value_name = "value", _unwanted_name = "unwanted") {
     return assert_comparison(_value != _unwanted, _value, _unwanted, "must not be equal to", _value_name, _unwanted_name, true);

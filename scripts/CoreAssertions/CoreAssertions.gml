@@ -15,6 +15,7 @@ function AssertionError(_message = "", _stacktrace = undefined) : Exception(_mes
 /// @param {String} _comparison_description - The description of the comparison.
 /// @param {String} [_value_name] - The name of the value. Defaults to "value".
 /// @param {String} [_threshold_name] - The name of the threshold. Defaults to "threshold".
+/// @param {Bool} [_nested] - whether this call is nested in another assertion.
 /// @returns {Any} The value that has been tested.
 function assert_comparison(_comparison_result, _value, _threshold, _comparison_description, _value_name = "value", _threshold_name = "threshold", _nested = false) {
     if (!_comparison_result) {
@@ -31,8 +32,12 @@ function assert_comparison(_comparison_result, _value, _threshold, _comparison_d
     }
 }
 
-function assert_condition(_valid, _message, _nested = false) {
-    if (!_valid) {
+/// @description Asserts a condition is true. Throws if not.
+/// @param {Bool} _condition - the condition to assert on.
+/// @param {String} _message - the exception message thrown if invalid.
+/// @param {Bool} [_nested] - whether this call is nested in another assertion.
+function assert_condition(_condition, _message, _nested = false) {
+    if (!_condition) {
         var _error = new AssertionError(_message);
         array_delete(_error.stacktrace, 0, _nested ? 2 : 1);
         throw _error;
